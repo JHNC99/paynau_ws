@@ -6,8 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
   const config = new DocumentBuilder()
-    .setTitle('Mi API')
-    .setDescription('Documentación de mi API con NestJS')
+    .setTitle('Pay cash')
+    .setDescription('Api clientes')
     .setVersion('1.0')
     .build();
 
