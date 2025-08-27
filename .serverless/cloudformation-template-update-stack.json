@@ -163,7 +163,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/employeePaynau/production/1756309396233-2025-08-27T15:43:16.233Z/employeePaynau.zip"
+          "S3Key": "serverless/employeePaynau/production/1756310262639-2025-08-27T15:57:42.639Z/employeePaynau.zip"
         },
         "Handler": "dist/lambda.handler",
         "Runtime": "nodejs22.x",
@@ -184,14 +184,14 @@
         "ApiLogGroup"
       ]
     },
-    "ApiLambdaVersionLwxlBAjWxbku3z2maw0OaIcaoql3Of46DUT2J1CqL9E": {
+    "ApiLambdaVersionS33WUIphVsZ524kU63OK9uOx4muOJ3q7795dICGis": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "LqVC5UwgbvvuF7TynHj1lYNZwOx5WKX09uCsI8Jtdko="
+        "CodeSha256": "hlFOXmvgrTIl+U7HXlHGer33HZkHJNtHv3VxjWdzEgs="
       }
     },
     "HttpApi": {
@@ -302,7 +302,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionLwxlBAjWxbku3z2maw0OaIcaoql3Of46DUT2J1CqL9E"
+        "Ref": "ApiLambdaVersionS33WUIphVsZ524kU63OK9uOx4muOJ3q7795dICGis"
       },
       "Export": {
         "Name": "sls-employeePaynau-production-ApiLambdaFunctionQualifiedArn"

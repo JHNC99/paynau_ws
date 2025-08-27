@@ -45,6 +45,20 @@ export class ClientsController {
     return this.clientsService.findOne(id);
   }
 
+  @Get(':id')
+  @ApiResponse({
+    status: 200,
+    description: 'Detalle de un cliente.',
+  })
+  getAll(@Param('id') id: string) {
+    return this.clientsService.findOne(id);
+  }
+
+  @Get('gender/list')
+  getAllgender() {
+    return this.clientsService.getAllGenders();
+  }
+
   @Patch(':id')
   @ApiBody({ type: CreateClientDto })
   @ApiResponse({

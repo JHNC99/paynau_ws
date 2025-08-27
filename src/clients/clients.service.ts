@@ -117,7 +117,7 @@ export class ClientsService {
         message: 'Cliente no encontrado',
       });
 
-    await this.clientRepository.softRemove(client);
+    await this.clientRepository.remove(client);
     return {
       success: true,
       message: 'Cliente eliminado correctamente',
