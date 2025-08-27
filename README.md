@@ -3,6 +3,15 @@
 
 Proyecto de prueba tecnica 
 
+## Requisitos previos
+
+Este proyecto utiliza el framework [NestJS](https://nestjs.com).  
+Si no tienes instalado el **Nest CLI**, instálalo de manera global ejecutando:
+
+```bash
+npm install -g @nestjs/cli
+```
+
 ## Instalar proyecto
 
 ```bash
